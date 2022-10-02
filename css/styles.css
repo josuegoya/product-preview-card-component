@@ -55,20 +55,15 @@ html {
 
 .container {
     width: 100%;
-    max-width: 60rem; 
-    margin: 0 auto;
+    max-width: 55rem;
     background-color: var(--White);
-    border-radius: 1rem;
+    border-radius: 1.5rem;
 }
 
-.container .img-mobile {
+.container picture img {
     width: 100%;
     object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
-}
-
-.container .img-desktop {
-    display: none;
+    border-radius: 1.5rem 1.5rem 0 0;
 }
 
 .text-container {
@@ -150,8 +145,6 @@ html {
     right: 8.5rem;
 }
 
-
-
 @media (min-width: 1024px) {
     
     .container {
@@ -159,25 +152,17 @@ html {
         justify-content: center;
         align-items: center;
     }
+    
+    .container picture img {
+        border-radius: 1.5rem 0 0 1.5rem;
+    }
 
-    .container .img-mobile {
-        display: none;
-    }
-    
-    .container .img-desktop {
-        display: inline;
-        width: 50%;
-        object-fit: cover;
-        border-radius: 1rem 0 0 1rem;
-    }
-    
     .container .text-container {
         height: 95%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
-
 }
 
 

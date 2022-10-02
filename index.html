@@ -16,8 +16,10 @@
 </head>
 <body class="layout">
   <main class="container">
-    <img src="./images/image-product-mobile.jpg" alt="product-img" class="img-mobile">
-    <img src="./images/image-product-desktop.jpg" alt="product-img" class="img-desktop">
+    <picture class="imgs">
+      <source media="(max-width:1024px)" srcset="./images/image-product-mobile.jpg">
+      <img src="./images/image-product-desktop.jpg" alt="Gabrielle Parfum">
+    </picture>
 
     <div class="text-container">
       <p class="perfume">Perfume</p>
